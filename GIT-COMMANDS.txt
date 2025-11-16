@@ -1,0 +1,24 @@
+# Git commands to initialize repo, make first commit, and push to GitHub
+
+# Initialize local repo
+git init
+git add .
+git commit -m "Initial commit: Premium realtime chat app (frontend + backend)"
+
+# Create remote on GitHub (replace <username> and <repo>)
+# On GitHub: create a new repository named premium-chat-app
+git remote add origin git@github.com:<username>/premium-chat-app.git
+
+# Push to main
+git branch -M main
+git push -u origin main
+
+# Create a feature branch for changes
+git checkout -b feature/add-ci
+
+# After making changes
+git add .
+git commit -m "Add CI workflow and README updates"
+git push -u origin feature/add-ci
+
+# Open a PR on GitHub from feature/add-ci into main, add reviewers, and merge when approved.

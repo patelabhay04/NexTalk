@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small additional styles */
+body { @apply bg-gray-100; }
+.chat-layout { @apply max-w-4xl mx-auto mt-10 grid grid-cols-3 gap-4; }
+.card { @apply bg-white rounded-lg shadow p-4; }
+.message { @apply my-2; }
+.message.me { @apply text-right; }
+.message .bubble { @apply inline-block px-4 py-2 rounded-lg; }
